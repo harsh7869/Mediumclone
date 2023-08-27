@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Clone</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        }
+        header {
+            background-color: #FFC017;
+            padding: 0px;
+            border: solid black 2px;
+            position: fixed;
+        }
+        
+
+       header nav {
+            background-color:#FFC017;
+            padding-left: 1034px;
+            padding-top: 0px;
+            justify-content: center;
+            position: sticky;
+            cursor: pointer;
+        }
+
+       header nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        button{
+
+color:white;
+background-color: black;
+border-radius: 30px;
+border-color: solid black;
+padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            
+            cursor: wait;
+}
+        .hero {
+            background-color: #ffc107;
+            padding left: 7px;
+            /* text-align: center; */
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            display: inline;
+           
+        }
+        .hero h2{
+            font-size: 60px;
+        }
+        .hero p {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 30px;
+            
+        }
+        img{
+            width: 27px;
+            text-align: right;
+            padding-top: 50px;
+            padding-left: 2px;
+        }
+
+        #btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color:solid rgb(255, 255, 255);
+            color:solid rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        .trending {
+            text-align: left;
+            padding: 200px ;
+            display: inline;
+        }
+        .trending h2 {
+            font-size: 24px;
+            margin-bottom: 0px;
+            padding-left: 20px;
+        }
+        .blog {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #969696;
+            cursor:pointer;
+        }
+        .blog img {
+            width: 220px;
+            height: 200px;
+        }
+        .blog-content {
+            flex: 1;
+            margin-left: 100px;
+        }
+        .blog h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .blog p {
+            font-size: 14px;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+        .blog-date {
+            font-size: 14px;
+            color: #000000;
+        }
+        
+        .tags {
+            text-align: center;
+            padding: 30px 0;
+        }
+        .tags h4 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px;
+            display: inline-block;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .article {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .article h2 {
+            margin: 0;
+        }
+        footer {
+            background-color:black;
+            color: #fff;
+            text-align: center;
+             padding: 50px; 
+            position: absolute;
+        
+            width: 95%;
+        }
+        
+        .blog h5 {
+            font-size: 24px;
+            margin-bottom: -6px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Our story</a>
+            <a href="#">Membership</a>
+            <a href="#">Write</a>
+            <a href="#">Sign In</a>
+            <button id="btn"><B> Get started</B></button>
+        </nav>
+      
+    </header>
+    <div class="hero">
+        <img src="medium_logo_icon_189223.png" alt="icon">
+        <h1>Medium</h1>
+        <h2>Where good ideas find you</h1>
+        <p>Discover stories, thinking, and expertise from writers on any topic.</p>
+        <button><b>Start reading</b></button>
+    </div>
+    <div class="trending">
+        <h2>Trending on Medium</h2>
+        <logo> <img src="1-NjT4dGUJxU3ldT07qav5IQ-removebg-preview.png" alt="" style="width: 100px;"> </logo>
+        <div class="container">
+            <div class="article">
+                <h3>Breaking News</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget ex vitae leo malesuada porttitor.</p>
+            </div>
+            <div class="article">
+                <h3>Entertainment Buzz</h3>
+                <p>Curabitur nec interdum urna. Sed nec luctus massa. Fusce nec ligula id ex ultricies suscipit.</p>
+            </div>
+            <div class="article">
+                <h3>Sports Update</h3>
+                <p>Donec ullamcorper, elit vel hendrerit auctor, augue sapien tincidunt elit, vel scelerisque quam dolor et augue.</p>
+            </div>
+        </div>
+        <div class="blog">
+            <img src="unkow.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>Reno diu</h5>
+            <div class="blog-content">
+                
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus excepturi quis iusto possimus ex nihil atque veniam tempora libero eligendi, aliquam, cupiditate quidem minima, blanditiis deserunt aperiam ut quasi odit quaerat. Quia quisquam itaque cum earum, vero fugit illo?</p>
+                <div class="blog-date">
+                    <p>Aug 23</p>
+                    <p class="mx-2">.</p>
+                    <p>9 min read</p>
+                </div>
+            </div>
+            <img src="1633514754.jpg" alt="Blog Image">
+        </div>
+
+        <div class="blog">
+            <img src="hum.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>Mahesh patk</h5>
+            <div class="blog-content">
+                
+                <h2>Lorem ipsum dolor sit!!!!...
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>july 5</p>
+                    <p class="mx-2">.</p>
+                    <p>50 min read</p>
+                </div>
+            </div>
+            <img src="Example-800x325.png" alt="Blog Image">
+        </div>
+        
+
+
+        <div class="blog">
+            <img src="randsm.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>lufiza laona</h5>
+            <div class="blog-content">
+                
+                <h2>N P S R</h2>
+                </h2>
+                <p>Lorem ipsum dolor sit,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam architecto iste aperiam? Ut, animi blanditiis soluta natus praesentium perferendis, autem illo tenetur ex numquam aut deserunt laudantium obcaecati nisi?
+                    amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>june 5</p>
+                    <p class="mx-2">.</p>
+                    <p>5 min read</p>
+                </div>
+            </div>
+            <img src="Hindu-God-Lord-Ganesh-HD-Wallpapers-02.jpg" alt="Blog Image">
+        </div>
+
+        <div class="blog">
+            <img src="unkow.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>I S R O</h5>
+            <div class="blog-content">
+                
+                <h2>Chandryaan 3</h2>
+                </h2>
+                <p>Lorem ipsum dolor sit,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam architecto iste aperiam? Ut, animi blanditiis soluta natus praesentium perferendis, autem illo tenetur ex numquam aut deserunt laudantium obcaecati nisi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illum cum quos libero facilis similique excepturi eius distinctio numquam consequuntur! amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>jun 5</p>
+                    <p class="mx-2">.</p>
+                    <p>20 min read</p>
+                </div>
+            </div>
+            <img src="ivan-bondar-trees-oceangrtgrg.jpg" alt="Blog Image">
+        </div>
+
+
+
+        <div class="blog">
+            <img src="unkow.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>Reno diu</h5>
+            <div class="blog-content">
+                
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus excepturi quis iusto possimus ex nihil atque veniam tempora libero eligendi, aliquam, cupiditate quidem minima, blanditiis deserunt aperiam ut quasi odit quaerat. Quia quisquam itaque cum earum, vero fugit illo?</p>
+                <div class="blog-date">
+                    <p>Aug 23</p>
+                    <p class="mx-2">.</p>
+                    <p>9 min read</p>
+                </div>
+            </div>
+            <img src="photo-1491466424936-e304919aada7.jfif" alt="Blog Image">
+        </div>
+
+        <div class="blog">
+            <img src="hum.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>Mahesh patk</h5>
+            <div class="blog-content">
+                
+                <h2>Lorem ipsum dolor sit!!!!...
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>july 5</p>
+                    <p class="mx-2">.</p>
+                    <p>50 min read</p>
+                </div>
+            </div>
+            <img src="Example-800x325.png" alt="Blog Image">
+        </div>
+        
+
+
+        <div class="blog">
+            <img src="randsm.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>lufiza laona</h5>
+            <div class="blog-content">
+                
+                <h2>N P S R</h2>
+                </h2>
+                <p>Lorem ipsum dolor sit,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam architecto iste aperiam? Ut, animi blanditiis soluta natus praesentium perferendis, autem illo tenetur ex numquam aut deserunt laudantium obcaecati nisi?
+                    amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>june 5</p>
+                    <p class="mx-2">.</p>
+                    <p>5 min read</p>
+                </div>
+            </div>
+            <img src="Hindu-God-Lord-Ganesh-HD-Wallpapers-02.jpg" alt="Blog Image">
+        </div>
+
+        <div class="blog">
+            <img src="unkow.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>I S R O</h5>
+            <div class="blog-content">
+                
+                <h2>Chandryaan 3</h2>
+                </h2>
+                <p>Lorem ipsum dolor sit,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam architecto iste aperiam? Ut, animi blanditiis soluta natus praesentium perferendis, autem illo tenetur ex numquam aut deserunt laudantium obcaecati nisi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illum cum quos libero facilis similique excepturi eius distinctio numquam consequuntur! amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>jun 5</p>
+                    <p class="mx-2">.</p>
+                    <p>20 min read</p>
+                </div>
+            </div>
+            <img src="ivan-bondar-trees-oceangrtgrg.jpg" alt="Blog Image">
+        </div>
+        <div class="blog">
+            <img src="unkow.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>Reno diu</h5>
+            <div class="blog-content">
+                
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus excepturi quis iusto possimus ex nihil atque veniam tempora libero eligendi, aliquam, cupiditate quidem minima, blanditiis deserunt aperiam ut quasi odit quaerat. Quia quisquam itaque cum earum, vero fugit illo?</p>
+                <div class="blog-date">
+                    <p>Aug 23</p>
+                    <p class="mx-2">.</p>
+                    <p>9 min read</p>
+                </div>
+            </div>
+            <img src="1633514754.jpg" alt="Blog Image">
+        </div>
+
+        <div class="blog">
+            <img src="hum.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>Mahesh patk</h5>
+            <div class="blog-content">
+                
+                <h2>Lorem ipsum dolor sit!!!!...
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>july 5</p>
+                    <p class="mx-2">.</p>
+                    <p>50 min read</p>
+                </div>
+            </div>
+            <img src="640443.jpg" alt="Blog Image">
+        </div>
+        
+
+
+        <div class="blog">
+            <img src="randsm.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>lufiza laona</h5>
+            <div class="blog-content">
+                
+                <h2>N P S R</h2>
+                </h2>
+                <p>Lorem ipsum dolor sit,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam architecto iste aperiam? Ut, animi blanditiis soluta natus praesentium perferendis, autem illo tenetur ex numquam aut deserunt laudantium obcaecati nisi?
+                    amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>june 5</p>
+                    <p class="mx-2">.</p>
+                    <p>5 min read</p>
+                </div>
+            </div>
+            <img src="Hindu-God-Lord-Ganesh-HD-Wallpapers-02.jpg" alt="Blog Image">
+        </div>
+
+        <div class="blog">
+            <img src="unkow.jpg" alt="" style="width: 30px;height: 30px;">
+            <h5>I S R O</h5>
+            <div class="blog-content">
+                
+                <h2>Chandryaan 3</h2>
+                </h2>
+                <p>Lorem ipsum dolor sit,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam architecto iste aperiam? Ut, animi blanditiis soluta natus praesentium perferendis, autem illo tenetur ex numquam aut deserunt laudantium obcaecati nisi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illum cum quos libero facilis similique excepturi eius distinctio numquam consequuntur! amet consectetur adipisicing elit. Distinctio a sit provident repudiandae facilis! Asperiores pariatur labore iure aspernatur minima qui. Ut pariatur ea deleniti ex veritatis commodi enim optio placeat? Explicabo labore quaerat expedita quasi pariatur sed libero suscipit nulla veritatis! Itaque quibusdam dolorem rerum ea numquam enim ad!</p>
+                <div class="blog-date">
+                    <p>jun 5</p>
+                    <p class="mx-2">.</p>
+                    <p>20 min read</p>
+                </div>
+            </div>
+            <img src="ivan-bondar-trees-oceangrtgrg.jpg" alt="Blog Image">
+        </div>
+
+       <!-- we can add more blog -->
+    </div>
+    <div class="tags">
+        <h4>Self</h4>
+        <h4>Relationships</h4>
+        <h4>Data Science</h4>
+        <h4>Programming</h4>
+        <h4>Productivity</h4>
+        <h4>Javascript</h4>
+        <h4>Machine Learning</h4>
+        <h4>Politics</h4>
+        <h4>Health</h4>
+    </div>
+    <footer>
+        &copy; 2023 Mediua Clone. <img src="imj.png" alt="">  All rights reserved.
+    </footer>
+</body>
+</html>
